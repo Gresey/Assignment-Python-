@@ -1,0 +1,31 @@
+COLLECTION DATATYPES IN PYTHON
+
+#LIST
+
+#example1
+list1=[34,"gresey",True,3.3]
+print("List is ",list1)
+list1.append(40)                             #appending;adding element at last
+print("list after appending",list1)
+list1.insert(2,"hello")                      #inserting an element
+print("list after insertion",list1)
+list1.remove(34)                             #deleting an element
+print("list after removing element",list1)
+list1[2]=False                               #updating at index 2
+print("list after updation",list1)
+print(type(list1))                           #type of list
+print("length of the list is",len(list1))    #length of list
+
+#example2
+list2=["Hi",2,45.6,False]
+print("List is ",list2)
+list2.append(256)                            #appending
+print("list after appending",list2)
+list2.insert(3,True)                         #inserting an element
+print("list after insertion",list2)
+list2.remove(False)                          #deleting an element
+print("list after removing element",list2)
+list2[0]="Hello"                             #updating at index 0
+print("list after updation",list2)
+print(type(list2))                           #printing type of list
+print(len(list2))                            #length of list
