@@ -5,6 +5,7 @@ COLLECTION DATATYPES IN PYTHON
 #example1
 list1=[34,"gresey",True,3.3]
 print("List is ",list1)
+print("element at 0th index is",list1)       #accessing elements through index
 list1.append(40)                             #appending;adding element at last
 print("list after appending",list1)
 list1.insert(2,"hello")                      #inserting an element
@@ -19,6 +20,7 @@ print("length of the list is",len(list1))    #length of list
 #example2
 list2=["Hi",2,45.6,False]
 print("List is ",list2)
+print("element at 2nd index is",list2)       #accessing elements through index
 list2.append(256)                            #appending
 print("list after appending",list2)
 list2.insert(3,True)                         #inserting an element
@@ -29,3 +31,64 @@ list2[0]="Hello"                             #updating at index 0
 print("list after updation",list2)
 print(type(list2))                           #printing type of list
 print(len(list2))                            #length of list
+
+
+
+#TUPLE
+
+Tuple1=(24,'welcome',45.1,True)
+print("Tuple is ",Tuple1)
+print("the element at index 1 is",Tuple1[1])                 #accessing elements through index
+
+Tuple2=('goodmorning',3,False)
+print("Tuple is ",Tuple2)
+print("the element at index 2 is",Tuple1[2])                 #accessing elements through index
+
+
+
+#DICTIONARY
+
+mydic1={"Name":"Gresey","Rollno":68,"Address":"Indore"} 
+print(mydic1)
+print(mydic["Address"]                                       #accessing value through key
+mydic1["Name"]="Rashi"                                       #updating value to a key
+print("After updation",mydic1)                              
+mydic1["Age"]=20                                             #inserting a new key value pair
+print("after inserting",mydic1)                            
+mydic1["Siblings"]=["Honey","Parth"]                         #inserting multiple values to a single key
+print(mydic1)
+mydic1.pop("Rollno")                                         #deleting a key value pair
+print("after deleting",mydic1)
+
+
+mydic2={"Fruit":"Mango","Vegetable":"Cabbage"}
+print(mydic2)
+print(mydic2["Vegetable"])                                  #accessing value through key
+mydic2["Fruit"]="Grapes"                                    #updating value to a key
+print("After updation",mydic2)
+mydic2["Icecream"]="vanilla"                                #inserting a new key value pair
+print("after inserting",mydic2)
+mydic2["Fruit"]=["Apple","Mango","orange"]                  #inserting multiple values to a single key
+print(mydic2)
+mydic2.pop("Vegetable")
+print("after deleting",mydic2)                              #deleting a key value pair
+
+
+#SET
+
+set1={24,5.2,True}
+print(set1)
+set1.add(40)                                                #adding an element
+print("after adding an element",set1)
+set1.remove(24)                                             #deleting an element
+print("after removing an element",set1)
+set2=(3,1,5.3,90)
+set3=set1.union(set2)                                       #union of 2 sets
+print("the union of set1 and set2 is",set3)
+set4={23,5,3,True}
+set5=set1|set2|set4                                         #union of 3 sets
+print(set5)
+set6=set1.intersection(set2)                                #intersection of 2 sets
+print(set6)
+set8=set1&set2&set1                                         #intersection of 3 sets
+print(set8)
