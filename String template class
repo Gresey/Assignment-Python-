@@ -1,0 +1,15 @@
+from string import Template
+
+t = Template('x is $x')
+print (t.substitute(x=1))
+
+tt=Template('a is $a and b is $b')
+print(tt.substitute(a=2,b=3))
+
+t1=Template("my name is $name")
+print(t1.substitute(name='gresey'))
+
+info=[('Parth',20),('Raashi',90)]
+t2=Template("$name has got $marks")
+for i in info:
+  print(t2.substitute(name=i[0],marks=i[1]))
